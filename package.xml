@@ -1,0 +1,47 @@
+<package>
+  <name>rtt_rsi</name>
+  <version>0.0.1</version>
+  <description>KUKA RSI components</description>
+  <maintainer email="lars.tingelstad@ntnu.no">Lars Tingelstad</maintainer>
+
+  <license>LGPL v3.0</license>
+
+  <author email="lars.tingelstad@ntnu.no">Lars Tingelstad</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>rtt</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>rtt_ros</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>diagnostic_msgs</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>message_generation</build_depend>
+  <build_depend>orocos_kdl</build_depend>
+  <build_depend>kdl_conversions</build_depend>
+  <build_depend>rtt_roscomm</build_depend>
+  <build_depend>rtt_geometry_msgs</build_depend>
+  
+  <run_depend>rtt</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>rtt_roscomm</run_depend>
+  <run_depend>rtt_geometry_msgs</run_depend>
+  <run_depend>rtt_ros</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>diagnostic_msgs</run_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>message_runtime</run_depend>
+  <run_depend>orocos_kdl</run_depend>
+  <run_depend>kdl_conversions</run_depend>
+
+  <export>
+    <rtt_ros>
+      <plugin_depend>rtt_std_msgs</plugin_depend>
+      <plugin_depend>rtt_diagnostic_msgs</plugin_depend>
+      <plugin_depend>rtt_geometry_msgs</plugin_depend>
+      <plugin_depend>rtt_sensor_msgs</plugin_depend>
+      <plugin_depend>eigen_typekit</plugin_depend>
+      <plugin_depend>kdl_typekit</plugin_depend>
+    </rtt_ros>
+  </export>
+</package>

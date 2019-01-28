@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<launch>
+    <arg name="sim" default="true" />
+    <include file="$(find etasl_kuka_rsi)/launch/rviz_kr6r900sixx.launch"/>
+    <node name='kuka_rsi_simulator' pkg='kuka_rsi_simulator' type="kuka_rsi_simulator" args="127.0.0.1 49152" if="$(arg sim)" />
+    <!-- <include file="$(find rtt_ros)/launch/rttlua.launch">
+        <arg name="RTTLUA_ARGS" value="$(find rtt_rsi)/scripts/run.lua"/>
+        <arg name="INTERACTIVE" value="true"/>
+        <arg name="DEBUG" value="false"/>
+    </include> -->
+</launch>
