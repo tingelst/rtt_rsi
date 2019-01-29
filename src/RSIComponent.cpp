@@ -107,8 +107,6 @@ public:
 
       port_joint_position_command_.read(joint_position_command_);
 
-      RTT::log(RTT::Info) << joint_position_command_[1] << RTT::endlog();
-
       // Write
       out_buffer_.resize(1024);
 
@@ -119,6 +117,8 @@ public:
 
       out_buffer_ = RSICommand(rsi_joint_position_corrections_, ipoc_).xml_doc;
       server_->send(out_buffer_);
+
+      port_joint_position_.write(joint_position_);
     }
     this->trigger();
   }
