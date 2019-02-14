@@ -36,6 +36,9 @@ public:
     this->ports()->addPort("JointPositionCommand", port_joint_position_command_).doc("");
     this->ports()->addPort("JointPosition", port_joint_position_).doc("");
 
+    this->addProperty("local_host", local_host_).doc("");
+    this->addProperty("local_port", local_port_).doc("");
+
     in_buffer_.resize(1024);
     out_buffer_.resize(1024);
     remote_host_.resize(1024);
