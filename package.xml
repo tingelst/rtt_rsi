@@ -4,7 +4,7 @@
   <description>KUKA RSI components</description>
   <maintainer email="lars.tingelstad@ntnu.no">Lars Tingelstad</maintainer>
 
-  <license>LGPL v3.0</license>
+  <license>BSD-3-Clause</license>
 
   <author email="lars.tingelstad@ntnu.no">Lars Tingelstad</author>
 
