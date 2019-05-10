@@ -16,7 +16,7 @@ class RSIComponent : public RTT::TaskContext
 {
 public:
   RSIComponent(const std::string& name)
-    : RTT::TaskContext(name)
+    : RTT::TaskContext(name, PreOperational)
     , local_host_("127.0.0.1")
     , local_port_(49152)
     , joint_position_(6, 0.0)
