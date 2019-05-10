@@ -1,6 +1,7 @@
 require "rttlib"
 require "rttros"
 
+rttlib.color=true -- Colored console output
 rtt.setLogLevel("Info")
 
 -- Task Context
